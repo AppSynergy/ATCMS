@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-GB">
+{{ range .Data.Pages }}
+  {{ if eq .Title "Home Page" }}
+    {{ partial "head.html" . }}
+    <body class="page page-template-default custom-background boxed">
+      <div id="page">  
+        {{ partial "header.html" . }}
+        {{ partial "main.html" . }} 
+        {{ partial "footer.html" . }}
+      </div>  
+    </body>
+  {{ end }}
+{{ end }}
+</html>

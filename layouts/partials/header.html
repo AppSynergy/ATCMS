@@ -1,0 +1,19 @@
+<header id="header">  
+  <div class="container header-meta">      
+    <div id="site-meta">      
+      <h1 class="site-title" >
+        <a href="http://atmcs.net" title="ATMCS" rel="home">ATMCS</a>
+      </h1>
+      <h2 class="site-description">
+        Air Traffic Management Consultancy Services
+      </h2>
+    </div>
+    <nav id="site-navigation" class="navbar" role="navigation">
+      <h3 class="sr-only">Main menu</h3>
+      <a class="sr-only" href="#primary" title="Skip to content">Skip to content</a>
+      {{ partial "menu.html" . }}
+    </nav>
+  </div>
+</header>
+
+<img src="{{ .Param "image" }}" alt="" class="header-img" />
