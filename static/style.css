@@ -6744,9 +6744,9 @@ a img.aligncenter {
 
 .sticky {
   display: block; }
-  
-  
-  
+
+
+
 /**************************/
 
 .boxed #page { max-width: 1380px; }
@@ -6759,7 +6759,16 @@ h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: #010051; fon
 article .entry-content h1, article .entry-content h1 a { font-family: Raleway, sans-serif !important; font-weight: normal; font-size: 32px; }
 .entry-meta, .entry-meta a { font-family: "Open Sans", sans-serif; font-weight: normal; font-size: 13px; }
 .nav .open > a .caret, .nav .open > a:hover .caret, .nav .open > a:focus .caret, .nav .caret, .nav a:hover .caret { border-top-color: #282828; border-bottom-color:#282828; }
+
 /* Custom CSS */
+
+@media (max-width: 768px) {
+  body .nav-justified > li > a {
+    background: transparent;
+    color: #001059;
+    font-weight: 700;
+  }
+}
 .nav-justified > li > a {
   border: 0;
   background: #000;
